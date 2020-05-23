@@ -9,7 +9,7 @@ $wallpaperPath = "$env:USERPROFILE\Pictures\Wallpaper\Spotlight\"
 
 # Create Wallpaper Folder in $env:USERPROFILE\Pictures\Spotlight\ if it doesn't exist
 If (!(Test-Path -Path $wallpaperPath)) {
-    New-Item -ItemType Directory -Force -Path $wallpaperPath
+    New-Item -ItemType Directory -Force -Path $wallpaperPath > $null
 }
 
 # Get image meta data and copy to $WallpaperPath if 1920X1080
