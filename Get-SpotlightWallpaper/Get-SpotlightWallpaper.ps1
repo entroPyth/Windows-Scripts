@@ -29,7 +29,5 @@ ForEach ($file in $spotlightFiles) {
     }
 }
 
+# To do:
 ## Set Desktop Background to Slideshow with path to $wallpaperPath
-#        If (Test-Path -Path ($wallpaperPath$file + ".jpg") {
-#            Write-Host "$file already exists, skipping"
-#        } else
